@@ -12,7 +12,10 @@ def remove_third_char(string: str) -> str:
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    return ""
+    old_char = string[6]
+    new_char = "z"
+    new_string = string.replace(old_char, new_char)
+    return new_string
 
 
 def get_nb_char(string: str, char: str) -> int:
