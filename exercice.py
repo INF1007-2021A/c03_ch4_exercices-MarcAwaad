@@ -31,9 +31,12 @@ def get_nb_char(string: str, char: str) -> int:
 
 def get_nb_words(sentence: str) -> int:
     nb_words = 1
-    for character in sentence:
-        if character == " ":
-            nb_words += 1
+    if sentence == "":
+        nb_words = 0
+    else:
+        for character in sentence:
+            if character == " ":
+                nb_words += 1
     return nb_words
 
 def main() -> None:
